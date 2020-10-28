@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "federalist:build": "next build && next export",
+    "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r out/* _site/",
+    "federalist": "npm run federalist:build && npm run federalist:copy"
   },
   "dependencies": {
     "next": "10.0.0",
