@@ -1,7 +1,5 @@
-import '../styles/globals.scss'
+import '../styles/index.scss'
 
-function MyApp({ Component, pageProps }) {
+export default function Application({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
-
-export default MyApp

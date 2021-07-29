@@ -1,0 +1,7 @@
+$theme-image-path: '/img';
+$theme-font-path: '/fonts';
+
+$theme-hero-image: '#{$theme-image-path}/hero.png';
+$theme-show-notifications: false;
+
+@import '@uswds/scss/uswds.scss';

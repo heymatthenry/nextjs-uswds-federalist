@@ -1,20 +1,34 @@
 {
   "name": "uswds-nextjs",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": ".next.config.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "federalist:build": "next build && next export",
-    "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r out/* _site/",
-    "federalist": "npm run federalist:build && npm run federalist:copy"
+    "export": "next export"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heymatthenry/nextjs-uswds-federalist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heymatthenry/nextjs-uswds-federalist/issues"
+  },
+  "homepage": "https://github.com/heymatthenry/nextjs-uswds-federalist#readme",
   "dependencies": {
-    "next": "10.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "sass": "^1.27.0",
+    "next": "^10.0.3",
+    "next-images": "^1.8.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.30.0",
     "uswds": "^2.9.0"
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.1"
   }
 }
