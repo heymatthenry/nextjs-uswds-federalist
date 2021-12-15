@@ -9,7 +9,7 @@
     "start": "next start",
     "export": "next export",
     "federalist": "npm run federalist:build && npm run federalist:copy",
-    "federalist:build": "npm run export",
+    "federalist:build": "npm run build && npm run export",
     "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r out/* _site/"
   },
   "repository": {
