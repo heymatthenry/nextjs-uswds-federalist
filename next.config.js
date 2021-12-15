@@ -4,7 +4,13 @@ module.exports = {
   assetPrefix: process.env.BASEURL ? process.env.BASEURL + '/' : '/',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles'), path.join(__dirname, 'node_modules/uswds/dist/scss')],
-    // prependData: `$baseUrl: '${process.env.BASEURL || "/"}'`,
+    // prependData: `
+    // ''
+    // `
+  },
+  images: {
+    loader: 'imgix',
+    path: '/',
   },
   webpack: (config) => {
     config.module.rules.push(
